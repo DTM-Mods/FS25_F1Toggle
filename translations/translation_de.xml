@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="f1t_section" text="F1-Hilfe Einträge"/>
+        <text name="f1t_shown" text="Angezeigt"/>
+        <text name="f1t_hidden" text="Ausgeblendet"/>
+        <text name="f1t_tooltip" text="Zeigt diesen Eintrag in der F1-Hilfe an oder blendet ihn aus. Die Taste funktioniert weiter. Aktion: %s"/>
+    </texts>
+</l10n>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="114" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>Fennell</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>F1 Toggle</en>
+        <de>F1 Toggle</de>
+    </title>
+    <description>
+        <en><![CDATA[Choose which entries show in the F1 help box.
+
+Open ESC > Settings > General and scroll to "F1 help entries". Every key hint seen this session is listed there, from the base game and from mods like AutoDrive and Courseplay. Set an entry to Hidden and it is gone from the F1 box. The key itself still works.
+
+Your choices are kept for all savegames in modSettings/FS25_F1Toggle/F1Toggle.xml. That file also lists every entry seen so far, so you can set hidden="true" there too.
+
+Console: f1tList lists the entries, f1tShowAll shows everything again.]]></en>
+        <de><![CDATA[Lege fest, welche Einträge in der F1-Hilfe angezeigt werden.
+
+ESC > Einstellungen > Allgemein öffnen und zu "F1-Hilfe Einträge" scrollen. Dort steht jeder Tastenhinweis dieser Sitzung, aus dem Grundspiel und aus Mods wie AutoDrive und Courseplay. Ein Eintrag auf Ausgeblendet verschwindet aus der F1-Hilfe. Die Taste selbst funktioniert weiter.
+
+Die Auswahl gilt für alle Spielstände und steht in modSettings/FS25_F1Toggle/F1Toggle.xml. Die Datei listet auch jeden bisher gesehenen Eintrag, dort geht auch hidden="true".
+
+Konsole: f1tList listet die Einträge, f1tShowAll zeigt wieder alles an.]]></de>
+    </description>
+
+    <iconFilename>icon_f1Toggle.png</iconFilename>
+    <multiplayer supported="true"/>
+    <l10n filenamePrefix="translations/translation"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/F1Toggle.lua"/>
+    </extraSourceFiles>
+</modDesc>

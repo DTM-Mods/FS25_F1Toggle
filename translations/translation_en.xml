@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="f1t_section" text="F1 help entries"/>
+        <text name="f1t_shown" text="Shown"/>
+        <text name="f1t_hidden" text="Hidden"/>
+        <text name="f1t_tooltip" text="Shows or hides this entry in the F1 help box. The key still works. Action: %s"/>
+    </texts>
+</l10n>
