@@ -48,6 +48,10 @@ Put `FS25_F1Toggle.zip` in `Documents/My Games/FarmingSimulator2025/mods`.
   <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/patch-notes.jpg" alt="Patch notes" width="100%">
 </p>
 
+### 1.0.0.1
+
+- New mod icon in the DTM Mods style. Nothing else changed.
+
 ### 1.0.0.0
 
 - First release on GitHub.
