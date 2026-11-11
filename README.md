@@ -38,7 +38,9 @@
 | `f1tList` | Lists the entries |
 | `f1tShowAll` | Shows everything again |
 
-## Installation
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/installation.jpg" alt="Installation" width="100%">
+</p>
 
 Put `FS25_F1Toggle.zip` in `Documents/My Games/FarmingSimulator2025/mods`.
 
