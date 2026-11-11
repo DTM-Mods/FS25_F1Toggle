@@ -56,6 +56,12 @@ Put `FS25_F1Toggle.zip` in `Documents/My Games/FarmingSimulator2025/mods`.
 
 - First release on GitHub.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/license.jpg" alt="License" width="100%">
+</p>
+
+MIT, see [LICENSE](LICENSE).
+
 ---
 
 <p align="center">
