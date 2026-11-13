@@ -1,0 +1,17 @@
+{
+  "2.jpg": {
+    "title": "F1 help entries",
+    "text": "Every key hint seen this session gets a Shown or Hidden switch in Settings > General.",
+    "at": "bottom"
+  },
+  "3.jpg": {
+    "title": "Hide what you already know",
+    "text": "A hidden entry leaves the F1 box; its key still works.",
+    "at": "bottom"
+  },
+  "4.jpg": {
+    "title": "Game and mod keys alike",
+    "text": "One switch per entry, sorted by name, with the action shown next to it.",
+    "at": "bottom"
+  }
+}
