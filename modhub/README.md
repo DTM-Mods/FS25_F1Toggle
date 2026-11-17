@@ -35,54 +35,52 @@ F1 Toggle
 
 ## Description English
 ```text
-Choose which entries show in the F1 help box. With mods such as AutoDrive and Courseplay installed, the F1 list gets long. F1 Toggle lets you hide the key hints you already know. Hiding an entry only takes it out of the F1 box: the key itself still works.
+Description: Lets you choose which key hints show in the F1 help box. A hidden entry leaves the F1 box; its key still works.
+Hotkeys: none, the mod adds no keys. Open ESC > Settings > General and scroll to "F1 help entries": every entry has its own Shown / Hidden switch.
+GitHub: https://github.com/DTM-Mods/FS25_F1Toggle
 
-- Every key hint seen this session is listed, from the base game and from mods.
-- Each entry has its own Shown / Hidden switch, sorted by name, with its action shown next to it.
-- Your choices are kept for all savegames in modSettings/FS25_F1Toggle/F1Toggle.xml. That file also lists every entry seen so far, so you can set hidden="true" there too.
-- Console commands: f1tList lists the entries, f1tShowAll shows everything again.
-- Works in single player and multiplayer.
+Every key hint seen this session is listed under "F1 help entries", from the base game and from mods like AutoDrive and Courseplay, sorted by name with its action next to it. Set an entry to Hidden and it is gone from the F1 box. The key itself still works.
 
-How to use: open ESC > Settings > General and scroll to "F1 help entries". Set an entry to Hidden and it is gone from the F1 box.
+Your choices are kept for all savegames in modSettings/FS25_F1Toggle/F1Toggle.xml. That file also lists every entry seen so far, so you can set hidden="true" there too.
 
-Changelog 1.0.0.1:
-- New mod icon.
-- No gameplay changes.
+Console: f1tList lists the entries, f1tShowAll shows everything again.
+
+Works in single player and multiplayer.
 ```
 
 ## Description German
 ```text
-Lege fest, welche Einträge in der F1-Hilfe angezeigt werden. Mit Mods wie AutoDrive und Courseplay wird die F1-Liste lang. Mit F1 Toggle blendest du die Tastenhinweise aus, die du schon kennst. Ein ausgeblendeter Eintrag verschwindet nur aus der F1-Hilfe: Die Taste selbst funktioniert weiter.
+Beschreibung: Lege fest, welche Tastenhinweise in der F1-Hilfe angezeigt werden. Ein ausgeblendeter Eintrag verschwindet aus der F1-Hilfe; seine Taste funktioniert weiter.
+Tastenkombinationen: keine, der Mod fügt keine Tasten hinzu. ESC > Einstellungen > Allgemein öffnen und zu "F1-Hilfe Einträge" scrollen: Jeder Eintrag hat einen eigenen Schalter Angezeigt / Ausgeblendet.
+GitHub: https://github.com/DTM-Mods/FS25_F1Toggle
 
-- Jeder Tastenhinweis dieser Sitzung wird aufgelistet, aus dem Grundspiel und aus Mods.
-- Jeder Eintrag hat einen eigenen Schalter Angezeigt / Ausgeblendet, nach Namen sortiert und mit der zugehörigen Aktion.
-- Die Auswahl gilt für alle Spielstände und steht in modSettings/FS25_F1Toggle/F1Toggle.xml. Die Datei listet auch jeden bisher gesehenen Eintrag, dort geht auch hidden="true".
-- Konsolenbefehle: f1tList listet die Einträge, f1tShowAll zeigt wieder alles an.
-- Funktioniert im Einzel- und Mehrspielermodus.
+Unter "F1-Hilfe Einträge" steht jeder Tastenhinweis dieser Sitzung, aus dem Grundspiel und aus Mods wie AutoDrive und Courseplay, nach Namen sortiert und mit der zugehörigen Aktion. Ein Eintrag auf Ausgeblendet verschwindet aus der F1-Hilfe. Die Taste selbst funktioniert weiter.
 
-So geht's: ESC > Einstellungen > Allgemein öffnen und zu "F1-Hilfe Einträge" scrollen. Einen Eintrag auf Ausgeblendet stellen, dann ist er aus der F1-Hilfe verschwunden.
+Die Auswahl gilt für alle Spielstände und steht in modSettings/FS25_F1Toggle/F1Toggle.xml. Die Datei listet auch jeden bisher gesehenen Eintrag, dort geht auch hidden="true".
 
-Changelog 1.0.0.1:
-- Neues Mod-Icon.
-- Keine Änderungen am Spielablauf.
+Konsole: f1tList listet die Einträge, f1tShowAll zeigt wieder alles an.
+
+Funktioniert im Einzel- und Mehrspielermodus.
 ```
 
 ## Description French
 ```text
-Choisissez les entrées affichées dans l'aide F1. Avec des mods comme AutoDrive et Courseplay, la liste F1 devient longue. F1 Toggle vous permet de masquer les raccourcis que vous connaissez déjà. Masquer une entrée la retire seulement de l'aide F1 : la touche fonctionne toujours.
+Description : permet de choisir les raccourcis affichés dans l'aide F1. Une entrée masquée disparaît de l'aide F1 ; sa touche fonctionne toujours.
+Raccourcis : aucun, le mod n'ajoute pas de touche. Ouvrez ÉCHAP > Paramètres > Général et faites défiler jusqu'à "F1 help entries" : chaque entrée a son propre interrupteur Shown / Hidden (affiché / masqué).
+GitHub : https://github.com/DTM-Mods/FS25_F1Toggle
 
-- Chaque raccourci vu pendant la session est listé, du jeu de base comme des mods.
-- Chaque entrée a son propre interrupteur Shown / Hidden (affiché / masqué), trié par nom, avec son action à côté.
-- Vos choix valent pour toutes les sauvegardes et sont enregistrés dans modSettings/FS25_F1Toggle/F1Toggle.xml. Ce fichier liste aussi chaque entrée vue jusqu'ici, vous pouvez donc y mettre hidden="true".
-- Commandes console : f1tList liste les entrées, f1tShowAll réaffiche tout.
-- Fonctionne en solo et en multijoueur.
+Chaque raccourci vu pendant la session est listé sous "F1 help entries", du jeu de base comme des mods tels qu'AutoDrive et Courseplay, trié par nom avec son action à côté. Réglez une entrée sur Hidden et elle disparaît de l'aide F1. La touche elle-même fonctionne toujours.
 
-Utilisation : ouvrez ÉCHAP > Paramètres > Général et faites défiler jusqu'à "F1 help entries". Réglez une entrée sur Hidden et elle disparaît de l'aide F1.
+Vos choix valent pour toutes les sauvegardes et sont enregistrés dans modSettings/FS25_F1Toggle/F1Toggle.xml. Ce fichier liste aussi chaque entrée vue jusqu'ici, vous pouvez donc y mettre hidden="true".
 
-Changelog 1.0.0.1 :
-- Nouvelle icône du mod.
-- Aucun changement de gameplay.
+Console : f1tList liste les entrées, f1tShowAll réaffiche tout.
+
+Fonctionne en solo et en multijoueur.
 ```
+
+## Screenshots
+
+Upload the four in [`screenshots/`](screenshots/) (1600x900, unedited in-game shots from `../screenshots/`), in order: 1 a tractor in the field with no UI, 2-4 the "F1 help entries" switches in Settings > General. 2-4 show other mods' settings tabs (BetterContracts, Mud System Settings) and other mods' entries and settings (Tighter Belts, Advanced Farm Manager).
 
 ## Before uploading
 
