@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="115" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+<modDesc descVersion="116" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
     <author>DTM Mods, Fennell</author>
-    <version>1.0.0.3</version>
+    <version>1.0.0.4</version>
     <title>
         <en>F1 Toggle</en>
     </title>
@@ -14,9 +14,8 @@ Your choices are kept for all savegames in modSettings/FS25_F1Toggle/F1Toggle.xm
 
 Console: f1tList lists the entries, f1tShowAll shows everything again.
 
-Changelog 1.0.0.3:
-- Meets the GIANTS ModHub checks (TestRunner): textures, icon and modDesc brought up to date.
-- Errors are no longer hidden: they show in the log.]]></en>
+Changelog 1.0.0.4:
+- Updated for the current game version (modDesc version 116).]]></en>
         <de><![CDATA[Lege fest, welche Einträge in der F1-Hilfe angezeigt werden.
 
 ESC > Einstellungen > Allgemein öffnen und zu "F1-Hilfe Einträge" scrollen. Dort steht jeder Tastenhinweis dieser Sitzung, aus dem Grundspiel und aus Mods wie AutoDrive und Courseplay. Ein Eintrag auf Ausgeblendet verschwindet aus der F1-Hilfe. Die Taste selbst funktioniert weiter.
@@ -25,9 +24,8 @@ Die Auswahl gilt für alle Spielstände und steht in modSettings/FS25_F1Toggle/F
 
 Konsole: f1tList listet die Einträge, f1tShowAll zeigt wieder alles an.
 
-Changelog 1.0.0.3:
-- Erfüllt die GIANTS-ModHub-Prüfungen (TestRunner): Texturen, Icon und modDesc auf den aktuellen Stand gebracht.
-- Fehler werden nicht mehr versteckt und erscheinen im Log.]]></de>
+Changelog 1.0.0.4:
+- An die aktuelle Spielversion angepasst (modDesc-Version 116).]]></de>
     </description>
 
     <iconFilename>icon_f1Toggle.dds</iconFilename>
