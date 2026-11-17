@@ -95,12 +95,17 @@ function F1Toggle.installInputHooks()
         end)
 end
 
--- Sets the text visibility without going through the hook. Pcall: the event may be gone already.
+-- Sets the text visibility without going through the hook. The event may be gone already: then nothing is done.
 function F1Toggle.setEventTextVisibility(eventId, isVisible)
     local setVisibility = InputBinding.f1tSetActionEventTextVisibility
-    if setVisibility ~= nil and g_inputBinding ~= nil then
-        pcall(setVisibility, g_inputBinding, eventId, isVisible)
+    if setVisibility == nil or g_inputBinding == nil or eventId == nil then
+        return
     end
+    local events = g_inputBinding.events
+    if type(events) == "table" and events[eventId] == nil then
+        return
+    end
+    setVisibility(g_inputBinding, eventId, isVisible)
 end
 
 function F1Toggle:onActionEventRegistered(inputBinding, eventId, actionName, target)
@@ -146,16 +151,16 @@ end
 
 -- The name the game shows for an action whose text was never set by its owner
 function F1Toggle.getInputActionDisplayName(actionName)
-    if g_inputBinding == nil then
+    if g_inputBinding == nil or type(actionName) ~= "string" then
         return nil
     end
-    local ok, inputAction = pcall(function()
-        if type(g_inputBinding.getActionByName) == "function" then
-            return g_inputBinding:getActionByName(actionName)
-        end
-        return g_inputBinding.nameActions ~= nil and g_inputBinding.nameActions[actionName] or nil
-    end)
-    if not ok or type(inputAction) ~= "table" then
+    local inputAction = nil
+    if type(g_inputBinding.getActionByName) == "function" then
+        inputAction = g_inputBinding:getActionByName(actionName)
+    elseif type(g_inputBinding.nameActions) == "table" then
+        inputAction = g_inputBinding.nameActions[actionName]
+    end
+    if type(inputAction) ~= "table" then
         return nil
     end
     local name = inputAction.displayNamePositive or inputAction.displayName
