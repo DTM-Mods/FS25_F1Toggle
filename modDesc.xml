@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="116" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
     <author>DTM Mods, Fennell</author>
-    <version>1.0.0.4</version>
+    <version>1.0.0.5</version>
     <title>
         <en>F1 Toggle</en>
     </title>
@@ -18,8 +18,9 @@ Console: f1tList lists the entries, f1tShowAll shows everything again.
 
 Works in single player and multiplayer.
 
-Changelog 1.0.0.4:
-- Updated for the current game version (modDesc version 116).]]></en>
+Changelog 1.0.0.5:
+- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
+- New mod icon in the ModHub standard.]]></en>
         <de><![CDATA[Beschreibung: Lege fest, welche Tastenhinweise in der F1-Hilfe angezeigt werden. Ein ausgeblendeter Eintrag verschwindet aus der F1-Hilfe; seine Taste funktioniert weiter.
 Tastenkombinationen: keine, der Mod fügt keine Tasten hinzu. ESC > Einstellungen > Allgemein öffnen und zu "F1-Hilfe Einträge" scrollen: Jeder Eintrag hat einen eigenen Schalter Angezeigt / Ausgeblendet.
 GitHub: https://github.com/DTM-Mods/FS25_F1Toggle
@@ -32,8 +33,9 @@ Konsole: f1tList listet die Einträge, f1tShowAll zeigt wieder alles an.
 
 Funktioniert im Einzel- und Mehrspielermodus.
 
-Changelog 1.0.0.4:
-- An die aktuelle Spielversion angepasst (modDesc-Version 116).]]></de>
+Changelog 1.0.0.5:
+- Beschreibung im ModHub-Aufbau von GIANTS (Kategorie, Preis, Unterhalt bzw. Tasten oben).
+- Neues Mod-Icon im ModHub-Standard.]]></de>
     </description>
 
     <iconFilename>icon_f1Toggle.dds</iconFilename>
