@@ -442,11 +442,45 @@ function F1Toggle:consoleShowAll()
 end
 
 -- ---------------------------------------------------------------------------------------------
+-- ModMux LIVE tab (only when ModMux is installed): every listed entry as an instant Shown / Hidden switch.
+-- F1 Toggle keeps saving the choice itself, so ModMux doesn't remember it (remember = false).
+-- ---------------------------------------------------------------------------------------------
+
+F1Toggle.liveRegistered = {}
+
+function F1Toggle:registerLiveSettings()
+    local modMux = g_modMux
+    if type(modMux) ~= "table" or type(modMux.registerLiveSetting) ~= "function" then
+        return
+    end
+    for _, actionName in ipairs(self:getListedActionNames()) do
+        if not self.liveRegistered[actionName] then
+            self.liveRegistered[actionName] = true
+            modMux.registerLiveSetting({
+                id = "f1Toggle." .. actionName,
+                modName = F1Toggle.MOD_NAME,
+                title = string.format(g_i18n:getText("f1t_liveTitle"), self:getActionLabel(actionName)),
+                description = string.format(g_i18n:getText("f1t_tooltip"), actionName),
+                kind = "bool",
+                remember = false,
+                get = function()
+                    return not F1Toggle.hiddenActions[actionName]
+                end,
+                set = function(value)
+                    F1Toggle:setActionHidden(actionName, not value)
+                end
+            })
+        end
+    end
+end
+
+-- ---------------------------------------------------------------------------------------------
 -- Lifecycle
 -- ---------------------------------------------------------------------------------------------
 
 function F1Toggle:loadMap()
     F1Toggle.installSettingsHooks()
+    self:registerLiveSettings()
     addConsoleCommand("f1tList", "Lists the F1 help entries and whether they are hidden", "consoleList", self)
     addConsoleCommand("f1tShowAll", "Shows all hidden F1 help entries again", "consoleShowAll", self)
 end
@@ -470,6 +504,8 @@ function F1Toggle:update(dt)
             end
         end
         self.newEvents = {}
+        -- entries seen for the first time join ModMux's LIVE tab
+        self:registerLiveSettings()
     end
 
     if next(self.pendingActions) ~= nil and not (g_gui ~= nil and g_gui:getIsGuiVisible()) then

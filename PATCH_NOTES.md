@@ -1,5 +1,9 @@
 # Patch notes
 
+## 1.0.0.6
+
+- With ModMux installed, every F1 help entry listed in the settings is also an instant switch on ModMux's LIVE tab ("F1 box: <entry>", On = shown). It changes the same setting as ESC > Settings > General.
+
 ## 1.0.0.5
 
 - Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
